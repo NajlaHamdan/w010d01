@@ -5,9 +5,9 @@ function Posts({ posts }) {
   return (
     <ul>
       {posts.map((post) => (
-        <>
-          <Link href={`posts/${post.id}`} key={post.id}><li>{post.title}</li></Link>
-        </>
+        <div key={post.id}>
+          <Link href={`posts/${post.id}`}><li>{post.title}</li></Link>
+        </div>
       ))}
     </ul>
   );
